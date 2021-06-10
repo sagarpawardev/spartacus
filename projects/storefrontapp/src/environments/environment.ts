@@ -3,6 +3,14 @@
 // `ng build --env=prod` then `environment.prod.ts` will be used instead.
 // The list of which env maps to which file can be found in `angular.json`.
 
+/*
+ * For easier debugging in development mode, you can import the following file
+ * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
+ *
+ * This import should be commented out in production mode because it will have a negative impact
+ * on performance if an error is thrown.
+ */
+import 'zone.js/dist/zone-error'; // Included with Angular CLI.
 import { Environment } from './models/environment.model';
 
 export const environment: Environment = {
@@ -14,4 +22,5 @@ export const environment: Environment = {
   cds: buildProcess.env.CX_CDS ?? false,
   b2b: buildProcess.env.CX_B2B ?? false,
   cdc: buildProcess.env.CX_CDC ?? false,
+  digitalPayments: buildProcess.env.CX_DIGITAL_PAYMENTS ?? false,
 };

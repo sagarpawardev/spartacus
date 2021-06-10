@@ -80,9 +80,11 @@ export default async function run(
     '@spartacus/product': 'feature-libs/product',
     '@spartacus/product-configurator': 'feature-libs/product-configurator',
     '@spartacus/storefinder': 'feature-libs/storefinder',
+    '@spartacus/tracking': 'feature-libs/tracking',
     '@spartacus/qualtrics': 'feature-libs/qualtrics',
     '@spartacus/cdc': 'integration-libs/cdc',
     '@spartacus/setup': 'core-libs/setup',
+    '@spartacus/digital-payments': 'integration-libs/digital-payments',
   };
 
   const duplexUtil = through(function (chunk, _, callback) {
@@ -307,10 +309,17 @@ if (typeof config.to === 'undefined') {
     case '@spartacus/cdc':
       config.library = '@spartacus/cdc';
       break;
+    case 'digital-payments':
+    case '@spartacus/digital-payments':
+      config.library = '@spartacus/digital-payments';
+      break;
     case 'storefinder':
     case '@spartacus/storefinder':
       config.library = '@spartacus/storefinder';
       break;
+    case 'tracking':
+    case '@spartacus/tracking':
+      config.library = '@spartacus/tracking';
     case 'qualtrics':
     case '@spartacus/qualtrics':
       config.library = '@spartacus/qualtrics';

@@ -28,6 +28,7 @@ export const SPARTACUS_SETUP = '@spartacus/setup';
 export const SPARTACUS_SETUP_SSR = `${SPARTACUS_SETUP}/ssr`;
 export const SPARTACUS_CDS = '@spartacus/cds';
 export const SPARTACUS_CDC = '@spartacus/cdc';
+export const SPARTACUS_DIGITAL_PAYMENTS = '@spartacus/digital-payments';
 export const SPARTACUS_ASSETS = '@spartacus/assets';
 export const SPARTACUS_STYLES = '@spartacus/styles';
 
@@ -52,6 +53,7 @@ export const COMPILER = 'Compiler';
 export const STORE = 'Store';
 
 export const ACTIONS = 'Actions';
+export const ACTION_SUBJECT = 'ActionsSubject';
 
 export const FORM_BUILDER = 'FormBuilder';
 export const JSONLD_PRODUCT_REVIEW_BUILDER = 'JsonLdProductReviewBuilder';
@@ -328,6 +330,15 @@ export const CURRENT_UNIT_SERVICE = 'CurrentUnitService';
 export const UNIT_CHILDREN_COMPONENT = 'UnitChildrenComponent';
 export const UNIT_COST_CENTER_LIST_COMPONENT = 'UnitCostCenterListComponent';
 export const UNIT_USER_LIST_COMPONENT = 'UnitUserListComponent';
+
+export const CART_PAGE_EVENT_BUILDER = 'CartPageEventBuilder';
+export const HOME_PAGE_EVENT_BUILDER = 'HomePageEventBuilder';
+export const PRODUCT_PAGE_EVENT_BUILDER = 'ProductPageEventBuilder';
+export const PAGE_EVENT_BUILDER = 'PageEventBuilder';
+export const CONTEXT = 'context';
+export const SEMANTIC_ROUTE = 'semanticRoute';
+export const URL = 'url';
+export const PARAMS = 'params';
 
 /***** Classes end *****/
 
